@@ -1,13 +1,35 @@
 \documentclass[11pt,a4paper]{article}
 
 \input{../shared/packages}
+\usepackage{fancyhdr}
 
-\geometry{margin=20mm}
+\geometry{margin=1in}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Name: \underline{\hspace{2.5cm}}}
 \lhead{Date: \underline{\hspace{2.5cm}}}
 \rfoot{Page \thepage}
+
+\usepackage{mdframed}
+\usepackage{xcolor}
+
+\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
+
+\newmdenv[
+  leftmargin=0pt,
+  rightmargin=0pt,
+  backgroundcolor=lightgray,
+  linecolor=black,
+  linewidth=2pt,
+  leftline=true,
+  rightline=false,
+  topline=false,
+  bottomline=false,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt
+]{example}
 
 \newenvironment{problem}[2][10]
 {\vspace{3mm}\noindent\textbf{Problem #2.} (#1 points)\par}
@@ -16,7 +38,7 @@
 \begin{document}
 
 \begin{center}
-\Large\textbf{Grade X, Chapter Y, Section Z, Worksheet N}\\
+\Large\textbf{Worksheet Title}\\
 \vspace{2mm}
 \large Course Name
 \end{center}
@@ -26,8 +48,12 @@ Problem text here.
 \end{problem}
 
 \begin{problem}[15]{2}
-Second problem text here.
+Second problem text here.arsars
 \vspace{2cm}
 \end{problem}
+
+\begin{example}
+Example problem with solution here.
+\end{example}
 
 \end{document}
