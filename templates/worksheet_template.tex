@@ -1,0 +1,33 @@
+\documentclass[11pt,a4paper]{article}
+
+\input{../shared/packages}
+
+\geometry{margin=20mm}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Name: \underline{\hspace{2.5cm}}}
+\lhead{Date: \underline{\hspace{2.5cm}}}
+\rfoot{Page \thepage}
+
+\newenvironment{problem}[2][10]
+{\vspace{3mm}\noindent\textbf{Problem #2.} (#1 points)\par}
+{\vspace{5mm}}
+
+\begin{document}
+
+\begin{center}
+\Large\textbf{Grade X, Chapter Y, Section Z, Worksheet N}\\
+\vspace{2mm}
+\large Course Name
+\end{center}
+
+\begin{problem}{1}
+Problem text here.
+\end{problem}
+
+\begin{problem}[15]{2}
+Second problem text here.
+\vspace{2cm}
+\end{problem}
+
+\end{document}
